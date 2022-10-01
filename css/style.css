@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+}
+
+#signOut{   
+margin-left: auto;
+margin-right: 50px;
+color: white;
+text-decoration: none;
+}
+
+.header{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-container{
+    border: 1px solid black;
+    column-gap: px;
+    width: 55%;
+}
+
+.form-floating{
+    width: 325px;
+    margin: 10px;
+}
+
+.form-control{
+    border-radius: 0px;
+}
+
+#float-lables{
+ text-align: center;
+} 
+
+#date-pick{
+    text-align: center;
+}
+
+/* radio gender */
+.list {
+    text-align: center;
+    display: inline-block;
+    margin-left: 60px;
+    border: 1px solid lightgray;
+    margin-left: 0px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.item {
+    text-align: left;
+    display: inline-block;
+}
+
+
+
