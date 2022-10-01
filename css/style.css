@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+   
+}
+
+body{
+    background: #dde1e7;
 }
 
 .navbar{
@@ -20,9 +25,15 @@ text-decoration: none;
 }
 
 .form-container{
-    border: 1px solid black;
-    column-gap: px;
+    margin-top: 50px;
     width: 55%;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: inset 3px 3px 5px #cbced1, inset -3px -3px 5px white;
+          
 }
 
 .form-floating{
@@ -31,7 +42,13 @@ text-decoration: none;
 }
 
 .form-control{
-    border-radius: 0px;
+    border-radius: 0px;   
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    box-shadow:  6px 6px 6px #cbced1, -6px -6px 6px white;    
 }
 
 #float-lables{
@@ -40,6 +57,11 @@ text-decoration: none;
 
 #date-pick{
     text-align: center;
+}
+
+#float-lables-date{
+    text-align: center;
+    margin-left: 15px;
 }
 
 /* radio gender */
@@ -51,6 +73,8 @@ text-decoration: none;
     margin-left: 0px;
     width: 100%;
     padding-top: 5px;
+    box-shadow:  6px 6px 6px #cbced1, -6px -6px 6px white;  
+
 }
 
 .item {
