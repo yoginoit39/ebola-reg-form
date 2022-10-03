@@ -6,6 +6,7 @@
 
 body{
     background: #dde1e7;
+    
 }
 
 .navbar{
@@ -41,45 +42,87 @@ text-decoration: none;
     margin: 10px;
 }
 
+
 .form-control{
-    border-radius: 0px;   
+    border-radius: 0px;  
+    border: none;
     background: #ecf0f3;
     padding: 10px;
     padding-left: 20px;
     height: 50px;
     font-size: 14px;
-    box-shadow:  6px 6px 6px #cbced1, -6px -6px 6px white;    
+    box-shadow:  6px 6px 6px #cbced1,  -4px -4px 4px white; 
+    
 }
 
+.form-control:hover{
+    box-shadow: 0 5px 15px rgba(245, 180, 3, 0.616);
+}
+
+.form-floating small{
+    visibility: hidden;
+}
+
+
+
+
 #float-lables{
- text-align: center;
+    text-align: center;
 } 
 
 #date-pick{
     text-align: center;
 }
 
+
 #float-lables-date{
     text-align: center;
     margin-left: 15px;
 }
 
+
+
 /* radio gender */
 .list {
+    border: none;
     text-align: center;
     display: inline-block;
-    margin-left: 60px;
-    border: 1px solid lightgray;
-    margin-left: 0px;
     width: 100%;
     padding-top: 5px;
-    box-shadow:  6px 6px 6px #cbced1, -6px -6px 6px white;  
+    box-shadow:  6px 6px 6px #cbced1,  -4px -4px 4px white;   
+}
 
+.list:hover{
+    box-shadow: 0 5px 15px rgba(245, 180, 3, 0.616);
 }
 
 .item {
     text-align: left;
     display: inline-block;
+}
+
+.form-select{
+    border: none;
+    border-radius: 0px;
+    background: #ecf0f3;
+    box-shadow: 6px 6px 6px #cbced1,  -4px -4px 4px white; 
+}
+
+.form-select:hover{
+    box-shadow: 0 5px 15px rgba(245, 180, 3, 0.616);   
+}
+
+.table-container{
+    text-align: center;
+    border-radius: 0px;  
+    background: #ecf0f3;
+    font-size: 15px;
+    box-shadow: 10px 10px 10px #cbced1,  -6px -6px 6px white;   
+    height: 150px;
+}
+
+.form-check-input:hover{
+    box-shadow: 0 5px 15px rgba(245, 180, 3, 0.616);  
 }
 
 
