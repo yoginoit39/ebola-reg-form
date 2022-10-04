@@ -51,7 +51,7 @@ text-decoration: none;
     padding-left: 20px;
     height: 50px;
     font-size: 14px;
-    box-shadow:  6px 6px 6px #cbced1,  -4px -4px 4px white; 
+    box-shadow: 6px 6px 6px #cbced1,  -4px -4px 4px white; 
     
 }
 
@@ -143,3 +143,16 @@ text-decoration: none;
     box-shadow: 10px 10px 10px #cbced1,  -6px -6px 6px white;   
 }
 
+.sub-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+background: #e0e0e0;
+box-shadow:  20px 20px 26px #5a5a5a,
+             -20px -20px 26px #ffffff;
+}
+
+.extra-height{
+    margin-top: 600px;
+}
