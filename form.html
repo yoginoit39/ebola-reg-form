@@ -11,288 +11,436 @@
 
 </head>
 <body>
+  <container>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1" style="color: white;">Ebola Form</span>
+        <a href="#" id="signOut">Sign Out</a>
+      </div>
+    </nav>
 
-        <nav class="navbar bg-dark">
-            <div class="container-fluid">
-              <span class="navbar-brand mb-0 h1" style="color: white;">Ebola Form</span>
-              <a href="#" id="signOut">Sign Out</a>
+    <div class="header">
+      <h3>Rapid Case Management form - Ebola Virus disease</h3>
+    </div>
+
+    <div class="container">
+      <section class="vitals">
+        <h5 class="pt-4 pb-2 text-center text-capitalize">Patient Information</h5>               
+        
+        <div class="row">
+          
+          <div class="form-floating col-3">
+            <input type="text" name="patientName" class="form-control text-center" id="floatingInput" placeholder="Patient Name">
+            <label id="float-lables">Patient Name</label>
+          </div> 
+
+          <div class="form-floating  col-3">
+            <input type="text" name="patientID" class="form-control text-center" id="floatingInput" placeholder="Patient ID Number" >
+            <label id="float-lables">Patient ID Number</label>
+          </div> 
+
+          <div class="form-floating col-3">
+            <input type="date" name="reg-date" class="form-control text-center" id="date-pick" placeholder="">
+            <label id="float-lables-date">Date of Registration</label>
+          </div> 
+
+          <div class="form-floating col-3">
+            <input type="text" name="NinFields" class="form-control text-center " id="Input" placeholder="Nin Number">
+            <label id="float-lables">NIN Number</label>
+          </div>
+        </div> 
+
+        <div class="row">                    
+          <div class="form-floating col-3">
+            <input type="date" class="form-control text-center" id="date-pick" placeholder="Date of Birth">
+            <label id="float-lables-date">Date of Birth</label>
+          </div>   
+          <div class="form-floating col-3">
+            <div class="list">
+              <h6>Gender</h6>
+              <div class="item">
+                <input type="radio" name="q" id="common" value="rainbow butterflies">
+                <label for="rainbow">Male</label>
+              </div>
+            &nbsp;
+              <div class="item">
+                <input type="radio" name="q" id="common" value="brimstone">
+                <label for="brimstone">Female</label>
+              </div>
             </div>
-          </nav>
+          </div>
+          <div class="form-floating col-3">
+            <input type="date" class="form-control text-center" id="date-pick" placeholder="Date of admission">
+            <label id="float-lables-date">Date of admission</label>
+          </div> 
 
-            <div class="header">
-                <h3>Ebola Patient Registration Form</h3>
-            </div>
+          <div class="form-floating col-3">
+            <select class="form-select text-center" aria-label="Default select example">
+              <option selected>Select Region</option>
+              <option value="1">Kampala</option>
+              <option value="2">Entebbe</option>
+              <option value="3">Mukono</option>
+            </select>
+          </div> 
+        </div>
+      </section> 
 
-            <div class="container form-container d-flex aligns-items-center justify-content-center">
-              <form action=""  id="regForm">   
-                    <h5 class="pt-0 text-center text-capitalize">Patient information</h5>               
-                    <div class="row">                       
-                            <div class="form-floating  col-lg-6">
-                                <input type="text" class="form-control text-center" disabled="disabled" placeholder="First Name" >
-                                <label id="float-lables">P/N 0030</label>
-                            </div>                         
-                        <div class="form-floating col-lg-5">
-                            <input type="date" name="reg-date" class="form-control text-center" id="date-pick" placeholder="">
-                            <label id="float-lables-date">Date of Registration</label>
-                        </div> 
-                    </div>                   
-                    <div class="row">                     
-                            <div class="form-floating col-lg-5">
-                                <input type="text" name="patientName" class="form-control text-center" id="floatingInput" placeholder="Patient Name">
-                                <label id="float-lables">Patient Name</label>
-                                
-                            </div>                        
+      <section class="vitals">
+        <h5 class="pt-4 pb-2 text-center text-capitalize">Patient Vitals</h5>
 
-                            <div class="form-floating col-lg-5">
-                                <input type="text" name="NinFields" class="form-control text-center " id="Input" placeholder="Nin Number">
-                                <label id="float-lables">Nin Number</label>
-                                
-                            </div>
-                    </div>  
-                    
-                    <div class="row">
-                        <div class="form-floating col-lg-5">
-                            <input type="date" class="form-control text-center" id="date-pick" placeholder="Date of Birth">
-                            <label id="float-lables-date">Date of Birth</label>
-                        </div>   
-                        <div class="form-floating col-lg-5">
-                            <div class="list">
-                                <h6>Gender</h6>
-                                <div class="item">
-                                  <input type="radio" name="q" id="common" value="rainbow butterflies">
-                                  <label for="rainbow">Male</label>
-                                </div>
-                                &nbsp;
-                                <div class="item">
-                                  <input type="radio" name="q" id="common" value="brimstone">
-                                  <label for="brimstone">Female</label>
-                                </div>
-                        </div>
-                     </div>  
-                    </div>
+        <div class="row"> 
 
-                    <div class="row">                     
-                        <div class="form-floating col-lg-5">
-                            <input type="date" class="form-control text-center" id="date-pick" placeholder="Date of admission">
-                            <label id="float-lables-date">Date of admission</label>
-                        </div>  
-                        <div class="form-floating col-lg-5">
-                                <select class="form-select text-center" aria-label="Default select example">
-                                    <option selected>Select Region</option>
-                                    <option value="1">Kampala</option>
-                                    <option value="2">Entebbe</option>
-                                    <option value="3">Mukono</option>
-                                </select>
-                        </div>                                        
-                </div>
+          <div class="form-floating col-lg-6">
+            <input type="text"  class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
+            <label id="float-lables">Heart Rate</label>
+          </div>   
 
-                
-                    <section class="vitals">
-                        <h5 class="pt-4 pb-2 text-center text-capitalize">Patient Vitals</h5>
-                        <div class="row">                       
-                            <div class="form-floating col-lg-6">
-                                <input type="text"  class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
-                                <label id="float-lables">Heart Rate</label>
-                            </div>                         
-                            <div class="form-floating col-lg-6">
-                                <input type="text"  class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
-                                <label id="float-lables">Temperature</label>
-                            </div>
+          <div class="form-floating col-lg-6">
+            <input type="text"  class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
+            <label id="float-lables">Temperature</label>
+          </div>
                                                  
-                                <div class="form-floating col-lg-6">
-                                    <input type="text"  class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
-                                    <label id="float-lables">Blood Pressure</label>
-                                </div>                         
-                                <div class="form-floating col-lg-6">
-                                    <input type="text" class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
-                                    <label id="float-lables">Weight</label>
-                                </div>
-                        </div>   
-                    </section> 
+          <div class="form-floating col-lg-6">
+            <input type="text"  class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
+            <label id="float-lables">Blood Pressure</label>
+          </div>    
 
-                    <section class="clinical-details">
-                        <h5 class="pt-4 pb-2 text-center text-capitalize">Clinical Details</h5>
-                            <table class="table table-bordered border-light table-container">
+          <div class="form-floating col-lg-6">
+            <input type="text" class="form-control text-center" id="floatingInput" placeholder="Heart Rate">
+            <label id="float-lables">Weight</label>
+          </div>
+        </div>   
+      </section> 
+
+      <section class="clinical-details">
+        <h5 class="pt-4 pb-2 text-center text-capitalize">Clinical Details</h5>
+        <table class="table table-bordered border-light table-container">
                 
-                                <tbody>
-                                    <tr>                                 
-                                        <td> <b>Tuberclosis</b> </td>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                  Yes
-                                                </label>
-                                              </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                 No
-                                                </label>
-                                              </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                  Unknown
-                                                </label>
-                                              </div>
-                                        </td>
+          <tbody>
+            <tr>                                 
+              <td> <b>Tuberclosis</b>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes
+                  </label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
                                         
-                                        <td>  <b>Asplenia</b></td>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                  Yes
-                                                </label>
-                                              </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                  No
-                                                </label>
-                                              </div>
-                                            </td>
+              <td>  <b>Asplenia</b> </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
                                             
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                    <label class="form-check-label" for="defaultCheck1">
-                                                      Unknown
-                                                    </label>
-                                                  </div>
-                                            </td>
-                                            
-                                    </tr>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+            </tr>
 
+            <tr>                                 
+              <td> <b>Hepatitis</b> </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+                                
+              <td> <b> Diabetes</b></td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+            </tr>
 
+            <tr>                                 
+              <td> <b>Pulmonary Disease</b>  </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+              <td> <b>Kidney Disease</b> </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="clinical-details" id="complications-at-admission">
+        <h5 class="pt-4 pb-2 text-center text-capitalize">Complications at admission</h5>
+        <table class="table table-bordered border-light table-container">
+              
+          <tbody>
+            <tr>                                 
+              <td> <b>Bleeding</b> </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+                                      
+              <td>  <b>Confusion</b></td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+                                          
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>                                 
+              <td> <b>Coma</b> </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1"> Unknown</label>
+                </div>
+              </td>
+                              
+              <td> <b> Seizure</b></td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>                                 
+              <td> <b>Shock</b>  </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+              <td> <b>Bacteraemia</b> </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+              </tr>
+
+          </tbody>
+        </table>
+                      
+      </section>
+
+      <section class="clinical-details" id="treatment-on-admission">
+        <h5 class="pt-4 pb-2 text-center text-capitalize">Treatment information on admission</h5>
+        <table class="table table-bordered border-light table-container">
+        
+          <tbody>
+            <tr>                                 
+              <td> <b>Anti-bacterial</b> </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
                                     
-                                <tr>                                 
-                                    <td> <b>Hepatitis</b> </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Yes
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              No
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Unknown
-                                            </label>
-                                          </div>
-                                    </td>
-                                
-                                
-                                    <td> <b> Diabetes</b></td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Yes
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              No
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Unknown
-                                            </label>
-                                          </div>
-                                    </td>
-                                </tr>
+              <td>  <b>Anti-malaria</b></td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Yes</label>
+                </div>
+              </td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">No</label>
+                </div>
+              </td>
+                                        
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Unknown</label>
+                </div>
+              </td>
+            </tr>
 
-                                  <tr>                                 
-                                    <td> <b>Pulmonary Disease</b>  </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Yes
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              No
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Unknown
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td> <b>Kidney Disease</b> </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Yes
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              No
-                                            </label>
-                                          </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                              Unknown
-                                            </label>
-                                          </div>
-                                    </td>
-                                </tr>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        
-                    </section>
+          </tbody>
+        </table>
+      </section>
 
-                    <button type="submit" onclick="checkInputs()">Submit</button>
-              </form> 
-
-                
-            </div> 
+      <button type="submit" onclick="checkInputs()">Submit</button>
+    </form> 
+    </div> 
             <!-- end of container -->
-
+  </container>
     <script src="js/validate.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

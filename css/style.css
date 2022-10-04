@@ -22,12 +22,12 @@ text-decoration: none;
 
 .header{
     text-align: center;
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .form-container{
     margin-top: 50px;
-    width: 55%;
+    width: 50%;
     height: fit-content;
     border-radius: 15px;
     padding: 40px;
@@ -38,7 +38,7 @@ text-decoration: none;
 }
 
 .form-floating{
-    width: 325px;
+    width: 300px;
     margin: 10px;
 }
 
@@ -125,5 +125,21 @@ text-decoration: none;
     box-shadow: 0 5px 15px rgba(245, 180, 3, 0.616);  
 }
 
+.button{
+    text-align: center; 
+    align-content: center;
+    border-radius: 0px;  
+    background: #ecf0f3;
+    font-size: 15px;
+    box-shadow: 10px 10px 10px #cbced1,  -6px -6px 6px white;   
+}
 
+.container{
+    text-align: center; 
+    align-content: center;
+    border-radius: 0px;  
+    background: #ecf0f3;
+    font-size: 15px;
+    box-shadow: 10px 10px 10px #cbced1,  -6px -6px 6px white;   
+}
 
